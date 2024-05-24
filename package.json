@@ -1,0 +1,37 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "clickup-gtd",
+  "title": "ClickUp GTD",
+  "description": "A Raycast extension to manage your ClickUp tasks with GTD methodology.",
+  "icon": "icon.png",
+  "author": "simochee",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "collect",
+      "title": "Collect Tasks",
+      "description": "Collect any tasks from ClickUp.",
+      "mode": "view"
+    }
+  ],
+  "private": true,
+  "packageManager": "pnpm@9.1.2+sha256.19c17528f9ca20bd442e4ca42f00f1b9808a9cb419383cd04ba32ef19322aba7",
+  "volta": {
+    "node": "22.2.0"
+  },
+  "scripts": {
+    "dev": "ray develop",
+    "postinstall": "lefthook install"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.7.3",
+    "@tsconfig/node22": "^22.0.0",
+    "@types/react": "^18.3.3",
+    "lefthook": "^1.6.12",
+    "sort-package-json": "^2.10.0"
+  },
+  "dependencies": {
+    "@raycast/api": "^1.75.1",
+    "@raycast/utils": "^1.15.0"
+  }
+}
